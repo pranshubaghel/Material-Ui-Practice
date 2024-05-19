@@ -13,14 +13,28 @@ class StudentDetails extends Component {
         { id: 4, name: 'Bob Brown', age: 23, course: 'Chemistry' },
         { id: 5, name: 'Charlie Davis', age: 24, course: 'Biology' },
         { id: 6, name: 'Diana Evans', age: 25, course: 'English' },
-        { id: 7, name: 'poorvi singh', age: 30, course: 'Hindi' },
-        { id: 8, name: 'Dipti pandey', age: 28, course: 'SST' }
+        { id: 7, name: 'Poorvi Singh', age: 30, course: 'Hindi' },
+        { id: 8, name: 'Dipti Pandey', age: 28, course: 'SST' }
       ],
       columns: [
         { field: 'id', headerName: 'ID', width: 70 },
-        { field: 'name', headerName: 'Name', width: 150 },
+        { 
+          field: 'name', 
+          headerName: 'Name', 
+          width: 150,
+          renderCell: (params) => (
+            <span style={{ color: 'blue' }}>{params.value}</span>
+          )
+        },
         { field: 'age', headerName: 'Age', width: 100 },
-        { field: 'course', headerName: 'Course', width: 150 }
+        { 
+          field: 'course', 
+          headerName: 'Course', 
+          width: 150,
+          renderCell: (params) => (
+            <span style={{ color: 'green' }}>{params.value}</span>
+          )
+        }
       ]
     };
   }
