@@ -1,6 +1,9 @@
 // src/App.js
 
-import StudentDetails from "./Component/Studentdetail/StudentDetails";
+import Form from "./Component/Form/Form";
+// import InputTest from "./Component/Input/InputTest";
+
+// import StudentDetails from "./Component/Studentdetail/StudentDetails";
 
 // import React from 'react';
 // import Button from '@mui/material/Button';
@@ -17,7 +20,9 @@ function App() {
     //     Hello World
     //   </Button>
     // </Container>
-    <StudentDetails/>
+    // <StudentDetails/>
+    // <InputTest/>
+    <Form/>
   );
 }
 
